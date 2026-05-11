@@ -1,7 +1,7 @@
-from pathlib import Path
+from pathlib import Path #Verwaltung Dateipfade
 
 import matplotlib
-matplotlib.use("TkAgg")
+matplotlib.use("TkAgg") #Grafik wird in fenster angezeigt
 
 import matplotlib.pyplot as plt
 
