@@ -9,4 +9,4 @@ df_activity = pd.read_csv("activity.csv", skipinitialspace=True)
 #print(df_activity.describe())  # Statistik
 
 Leistung_Mittelwert = df_activity["PowerOriginal"].mean()
-print("Der Mittelwert beträgt:", Leistung_Mittelwert)
+print(Leistung_Mittelwert)
