@@ -11,6 +11,3 @@ df_activity = pd.read_csv("activity.csv", skipinitialspace=True)
 
 Leistung_Mittelwert = df_activity["PowerOriginal"].mean()
 print(Leistung_Mittelwert)
-
-Leistung_Maximalwert = df_activity["PowerOriginal"].max()
-print("Die Maximale Leistung beträgt: ", Leistung_Maximalwert)
