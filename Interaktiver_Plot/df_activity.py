@@ -17,7 +17,8 @@ Leistung_Maximalwert = df_activity["PowerOriginal"].max()
 print("Die maximale Leistung beträgt: ", Leistung_Maximalwert)
 
 
-df_activity = df_activity.dropna()
+df_activity = df_activity.dropna(subset=["HeartRate"])
+df_activity = df_activity.dropna(subset=["PowerOriginal"])
 
 # Zeitachse bauen (jede Zeile = 1 Sekunde)
 df_activity["Time"] = df_activity.index
